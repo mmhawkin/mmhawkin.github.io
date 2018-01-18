@@ -1,13 +1,12 @@
 html {
-  background-color: #baddff;
+  background-color: #FFF;
 }
 
 body {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
   background-color: #ffe6ba;
-  padding: 0 20px 20px 20px;
-  
+  background-image: url(/images/colors.jpg);
 }
 
 img {
@@ -15,15 +14,28 @@ img {
   margin: 0 auto;
 }
 
-h1 {
-  margin: 0;
-  padding: 20px 0;    
-  color: solid black;
-  text-shadow: 3px 1px 1px black;
+.home {
+  grid-area: home_area;
 }
 
-p {
-	color: solid black;
-	width: 500px;
-  	border: 1px solid black;
+.navbar>div {
+  background-color: #4a4142;
+  color: white;
+  font-family: georgia; 
+  font-size: 125%;
+  font-weight: bold;
+  padding:20px 10px;
+  text-align: left;
 }
+
+
+.navbar {
+  background-color: #4a4142;
+  display: grid;
+  grid: 'home_area home_area . . .';
+  grid-gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 5px 5px 5px #DDD;
+}
+
